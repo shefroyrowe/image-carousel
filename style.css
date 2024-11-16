@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides-box {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.slides-box img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    position: fixed;
+    height: 100vh;
+    width: 10rem;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+}
+
+.btn img {
+    height: 5rem;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}
+
+.move-right {
+    left: 88.3vw;
+    bottom: 0;
+}
+
+.move-left {
+    left: 0;
+}
