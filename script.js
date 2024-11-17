@@ -75,3 +75,11 @@ navDots.forEach(dot => {
     })
 })
 
+
+    setInterval(() => {
+        window.scrollBy({
+            top: 0,
+            left: 1417,//move by this many pixels
+            behavior: "smooth"
+        })
+    }, 6000);
