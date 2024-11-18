@@ -75,11 +75,26 @@ navDots.forEach(dot => {
     })
 })
 
+let trackEachPass = 0;
 
     setInterval(() => {
+        if (trackEachPass < 4) {
         window.scrollBy({
             top: 0,
-            left: 1417,//move by this many pixels
+            left: 1417,//move by this many pixels right
             behavior: "smooth"
-        })
-    }, 6000);
+        });
+        trackEachPass++;
+    }
+    if (trackEachPass === 4) {
+        window.scrollBy({
+            top: 0,
+            left: -5000,//move by this many pixels right
+            behavior: "smooth"
+        });
+        trackEachPass = 0;
+    }
+}, 6000);
+
+   
+    
